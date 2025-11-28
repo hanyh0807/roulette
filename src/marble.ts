@@ -189,7 +189,7 @@ export class Marble {
 
     ctx.shadowColor = '';
     ctx.shadowBlur = 0;
-    //this._drawName(ctx, zoom);
+    this._drawName(ctx, zoom);
 
     if (outline) {
       this._drawOutline(ctx, 2 / zoom);
