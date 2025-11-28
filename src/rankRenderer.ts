@@ -93,12 +93,14 @@ export class RankRenderer implements UIObject {
       if (y >= startY && y <= startY + ctx.canvas.height) {
         ctx.fillStyle = `hsl(${marble.hue} 100% ${theme.marbleLightness}`;
         ctx.strokeText(
-          `${rank === winnerRank ? '☆' : '\u2714'} ${marble.name} #${rank + 1}`,
+          //`${rank === winnerRank ? '☆' : '\u2714'} ${marble.name} #${rank + 1}`,
+           `${rank === winnerRank ? '☆' : '\u2714'}  #${rank + 1}`,
           startX,
           20 + y,
         );
         ctx.fillText(
-          `${rank === winnerRank ? '☆' : '\u2714'} ${marble.name} #${rank + 1}`,
+          //`${rank === winnerRank ? '☆' : '\u2714'} ${marble.name} #${rank + 1}`,
+          `${rank === winnerRank ? '☆' : '\u2714'}  #${rank + 1}`,
           startX,
           20 + y,
         );
@@ -110,12 +112,14 @@ export class RankRenderer implements UIObject {
       if (y >= startY && y <= startY + ctx.canvas.height) {
         ctx.fillStyle = `hsl(${marble.hue} 100% ${theme.marbleLightness}`;
         ctx.strokeText(
-          `${marble.name} #${rank + 1 + winners.length}`,
+          //`${marble.name} #${rank + 1 + winners.length}`,
+          ` #${rank + 1 + winners.length}`,
           startX,
           20 + y,
         );
         ctx.fillText(
-          `${marble.name} #${rank + 1 + winners.length}`,
+          //`${marble.name} #${rank + 1 + winners.length}`,
+          ` #${rank + 1 + winners.length}`,
           startX,
           20 + y,
         );
