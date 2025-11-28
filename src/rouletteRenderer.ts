@@ -205,7 +205,8 @@ export class RouletteRenderer {
         camera.zoom * initialZoom,
         i === winnerIndex,
         false,
-        this._images[marble.name] || undefined,
+        //this._images[marble.name] || undefined,
+        undefined,
         viewPort,
         this._theme,
       );
